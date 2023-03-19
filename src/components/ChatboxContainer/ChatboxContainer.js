@@ -3,13 +3,12 @@ import Chatbox from '../Chatbox/Chatbox'
 
 const ChatboxContainer = () => {
     const [messageSend, setMessageSend] = useState([])
-    const [authorJohn, setAuthorJohn] = useState("John")
-    const [authorJulia, setAuthorJulia] = useState("Julia")
+    const [idCount, setIdCount] = useState(1)
 
     return (
         <div className="chatbox-container">
-            <Chatbox messageSend={messageSend} setMessageSend={setMessageSend} author={authorJohn} />
-            <Chatbox messageSend={messageSend} setMessageSend={setMessageSend} author={authorJulia}/>
+            <Chatbox messageSend={messageSend} setMessageSend={setMessageSend} author={"John"} idCount={idCount} setIdCount={setIdCount} />
+            <Chatbox messageSend={messageSend} setMessageSend={setMessageSend} author={"Julia"} idCount={idCount} setIdCount={setIdCount}/>
         </div>
     )
 }

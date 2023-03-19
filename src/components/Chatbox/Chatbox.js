@@ -10,9 +10,9 @@ const Chatbox = (props) => {
     //     message: "Text"
     // }
     return (
-        <div>
+        <div className="chatbox">
             <Message messageSend={props.messageSend} setMessageSend={props.setMessageSend} author={props.author}/>
-            <SendInput messageSend={props.messageSend} setMessageSend={props.setMessageSend} author={props.author}/>
+            <SendInput messageSend={props.messageSend} setMessageSend={props.setMessageSend} author={props.author} idCount={props.idCount} setIdCount={props.setIdCount}/>
         </div>
     )
 }

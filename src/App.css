@@ -1,4 +1,12 @@
 .chatbox-container {
   display: flex;
   justify-content: center;
+  gap: 20%;
+  background-color: darkgray;
+  height: 100vh;
+}
+
+.chatbox {
+  background-color: gainsboro;
+  width: 250px;
 }
