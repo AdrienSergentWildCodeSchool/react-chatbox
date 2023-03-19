@@ -10,3 +10,23 @@
   background-color: gainsboro;
   width: 250px;
 }
+
+.send-input {
+  margin-top: 10%;
+}
+
+.message-send {
+  margin-left: 30%;
+} 
+
+.icon-edit {
+  width: 6%;
+}
+
+.input-send-author {
+  background-color: #4870df;
+} 
+
+.input-send-another-author {
+  background-color: #fafafa;
+}

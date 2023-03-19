@@ -2,14 +2,11 @@ import React, { useState } from 'react'
 
 const SendInput = (props) => {
     const [messageValue, setMessageValue] = useState("")
-    // const [idCount, setIdCount] = useState(1)
     
     const handleChange = (event) => {
         setMessageValue(event.target.value)
     }
-    
-    console.log(messageValue, 'messageValue')
-    
+        
     const handleSubmit = (event) => {
         event.preventDefault()
         
@@ -25,7 +22,7 @@ const SendInput = (props) => {
     }
     
     return (
-        <div style={{marginTop: "10%"}}>
+        <div className="send-input">
             <form onSubmit={handleSubmit}> 
                 <input value={messageValue} onChange={(event) => handleChange(event)}/>
                 <button type="submit"> Send </button>
